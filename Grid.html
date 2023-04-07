@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">`
+    <title>Document</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>header {
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 1fr;
+        align-items: center;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+    }
+    
+    .logo {
+        grid-column: 1 / span 1;
+    }
+    
+    nav {
+        grid-column: 2 / span 1;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav li {
+        margin-right: 30px;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    .search {
+        grid-column: 3 / span 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .search input[type="text"] {
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    .search button {
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+        cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+    
+        .logo {
+            grid-column: 1 / span 1;
+        }
+    
+        nav {
+            grid-column: 1/span 2;
+        }
+    
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+    
+        nav li {
+            margin-top: 30px;
+        }
+    
+        .search {
+            grid-column: 1/ span 3;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 30px;
+        }
+    }
+    
+    .container {
+        margin-top: 30px;
+        font-size: 2rem;
+    
+    }
+    
+    .box {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        align-items: center;
+        padding: 20px;
+        color: #fff;
+    }
+    
+    .a {
+        grid-column: 1 / span 1;
+    }
+    
+    .b {
+        grid-column: 2 / span 1;
+        color: black;
+    
+    }
+    
+    .v {
+        width: auto;
+        height: auto;
+    }
+    
+    .c {
+        grid-column: 3 /span 1;
+        color: black;
+    }
+    
+    .m {
+        border: 0.4px solid black;
+    }
+    
+    .n {
+        background-color: red;
+        text-align: center;
+    }
+    
+    @media (max-width: 1024px) {
+        .box {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+    
+        .a {
+            grid-column: 1/span 1;
+        }
+    
+        .b {
+            grid-column: 1/span 2;
+        }
+    
+        .c {
+            grid-column: 1/span 3;
+            text-align: center;
+        }
+    }
+    
+    .s {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .d {
+        grid-column: 1 / span 1;
+    }
+    
+    .f {
+        grid-column: 2/ span 1;
+    }
+    
+    @media (max-width: 768px) {
+        .s {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+    
+        .d {
+            grid-column: 1 / span 1;
+        }
+    
+        .f {
+            grid-column: 1/ span 2;
+        }
+    }
+    .g {
+        display: grid;
+        grid-template-columns: 25% 20% 30% 25%;
+        grid-template-rows: auto;
+        align-items: center;
+        padding: 20px;
+        color: black;
+    }
+    .h{
+        grid-column: 1 / span 1;
+    }
+    .j {
+        grid-column: 2 / span 1;
+    }
+    .k{
+        grid-column: 3 / span 1;
+    }
+    .l{
+        grid-column: 4 / span 1;
+    }
+    @media (max-width: 768px) {
+        .g {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            padding: 20px;
+            color: black;
+        }
+        .h{
+            grid-column: 1 / span 1;
+        }
+        .j {
+            grid-column: 1 / span 2;
+        }
+        .k{
+            grid-column: 1 / span 3;
+        }
+        .l{
+            grid-column: 1 / span 4;
+        }
+    }
+    .e1>footer{
+        border-top: 5px double orangered;
+        line-height: 50px;
+        background-color: lightcyan;
+        text-align: center;
+        font-variant: small-caps;
+        clear: both;
+        }</style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/PS34031-NGUYENMINHNHUT-ASSIGNMET/img/logo.png" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Các sản phẩm</a></li>
+          <li><a href="#">Trung tâm dịch vụ</a></li>
+          <li><a href="#">Khiếu nại</a></li>
+          <li><a href="#">Liên Hệ</a></li>
+
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </header>
+    <div class="container"><strong>IPhone 14 Pro Max</strong></div>
+    <hr>
+    <div class="box">
+      <div class="a">
+      <img src="/PS34031-NGUYENMINHNHUT-ASSIGNMET/img/iphone.jpg" alt="" style="width: 100%;">
+      </div>
+      <div class="b">
+        <div class="v">
+          <br>
+          <h4>iPhone 14 Pro Max Specifications</h4>
+          <p>&#9679; &nbsp;6.68" Flexble OLED Screen</p>
+          <p>&#9679; (2778x1284) Resolution &458PPI</p>
+          <p>&#9679; 120Hz Refresh Rate</p>
+          <p>&#9679; A15 Bionic (5nm TSMC)</p>
+          <p>&#9679; 6GB LPDDR4X RAM</p>
+          <P>&#9679; 128GB/256GB Storage</P>
+          <p>&#9679; Dual Rear Camera (12MP+12MP)</p>
+          <p>&#9679; Face ID</p>
+          <p>&#9679; Notch</p>
+          <button style="background-color: rgb(130, 130, 246); color: black;">28.790.000đ</button>
+        </div>
+      </div>
+      <div class="c">
+        <div class="m">
+          <div class="n"><h4>THÔNG TIN KHO HÀNG</h4></div>
+          <p>&nbsp;- Liên hệ</p>
+        </div>
+        <br>
+        <div class="m">
+          <div class="n"><h4>YÊN TÂM MUA HÀNG</h4></div>
+          <p> &nbsp;&#9679; &nbsp;Uy tín 22 năm Top đầu trên thị trường</p>
+          <p>&nbsp;&#9679; &nbsp;Sản phẩm chính hãng 100%</p>
+          <p>&nbsp;&#9679; &nbsp;Trả góp lãi suất 0% toàn bộ giỏ hàng</p>
+          <p>&nbsp;&#9679; &nbsp;Trả bảo hành tận nơi sử dụng</p>
+          <p>&nbsp;&#9679; &nbsp;Bảo hành tận nơi cho doanh nghiệp</p>
+          <p>&nbsp;&#9679; &nbsp;Vệ sinh miễn phí trọn đời PC, Laptop</p>
+          <p>&nbsp;&#9679; &nbsp;Miễn phí quẹt thẻ khi thanh toán</p>
+        </div>
+      </div>
+    </div>
+    <div class="s">
+      <div class="d"> <script async defer crossorigin="anonymous"
+          src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0&appId=904393103917812&autoLogAppEvents=1"
+          nonce="bKEhtCXA"></script>
+        <iframe
+          src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=large&share=true&height=35&appId=904393103917812"
+          width="450" height="35" style="border:none;overflow:hidden"
+          scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay;
+          clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <hr>
+        <div class="fb-comments"
+          data-href="http://127.0.0.1:5500/PS34031-Lab13/Lab13bai3.html"
+          data-width="" data-numposts="5"></div></div>
+      <div class="f"><iframe
+          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d62695.1583916001!2d106.59927996139182!3d10.853536018138472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m5!1s0x3175298bf01c312b%3A0xba5c81ae386ec5b9!2zMTk3NyBRdeG7kWMgbOG7mSAxQSwgxJDDtG5nIEjGsG5nIFRodeG6rW4sIFF14bqtbiAxMiwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!3m2!1d10.8534537!2d106.6342997!4m3!3m2!1d10.8537889!2d106.6351572!5e0!3m2!1svi!2s!4v1680606668670!5m2!1svi!2s"
+          width="600" height="450" style="border:0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <hr>
+    <div class="g">
+      <div class="h">
+        <h3>Giải đáp </h3>
+        <p>Giới thiệu Bạch Long Mobile</p>
+        <p>Giới thiệu Bạch Long Care</p>
+        <p>Tra cứu B-member</p>
+        <p>Hướng dẫn mua hàng Online</p>
+        <p>Hình thức thanh toán</p>
+        <p>Quy định giao hàng</p>
+        <p></p>
+      </div>
+      <div class="j">
+        <h3>Chính sách</h3>
+        <p>Chính sách bảo hành</p>
+        <p>Bảo hành toàn diện</p>
+        <p>Đổi cũ lấy mới</p>
+        <p>Chính sách bảo mật</p>
+        <p>Điều khoản sử dụng</p>
+        <p>Câu hỏi thường gặp</p>
+      </div>
+      <div class="k">
+        <h3>THÔNG TIN LIÊN LẠC</h3>
+        <p>Gọi Mua hàng/Tư vấn: 1900.63.64.69</p>
+        <p>Thời gian phục vụ tại cửa hàng: 8h00 - 21h30</p>
+        <p>Khiếu nại, góp ý: 0938.038.038</p>
+        <p>Hợp tác kinh doanh: 0938.038.038 (điện thoại/zalo)</p>
+        <p>Email: kinhdoanh@bachlongmobile.com</p>
+      </div>
+      <div class="l">
+        <h3>TÌM CỬA HÀNG GẦN BẠN</h3>
+        <p>Hệ thống cửa hàng bán lẻ </p>
+        <p>Bảo hành - Sửa chữa Bạch Long Care </p>
+       <br><br><br>
+      </div>
+    </div>
+    <article class="e1">
+      <footer>Copyright 2023 © Wed bán Iphone| Thiết kế bởi Web Nhựt đẹp trai</footer>
+      </article> 
+  </body>
+</html>
